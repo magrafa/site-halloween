@@ -502,7 +502,9 @@ button {
 .newsletter__container{
   display: flex;
   flex-direction:column;
-  align-items: center
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .newsletter__description{
   text-align: center;
@@ -618,11 +620,7 @@ button {
     grid-template-columns: .8fr;
     justify-content: center;
   }
-  .newsletter__container{
-    display: grid;
-    grid-template-columns: .7fr;
-    justify-content: center;
-  }
+
   .newsletter__description{
     padding: 0 3rem;
   }
@@ -802,5 +800,22 @@ button {
   }
   .footer__copy{
     margin-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .home__img{
+    height: 420px;
+  }
+  .swiper-pagination{
+    margin-top: var(--mb-2-5);
+  }
+  .footer__img-one{
+    width: 120px;
+  }
+  .footer__img-two{
+    width: 180px;
+    top: 30%;
+    left: -3%;
   }
 }
